@@ -1,0 +1,25 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+p{
+    font-family: verdana;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+.pikin1{
+    text-align: center;
+    color: black;
+}
+
+#child1{
+    text-align: right;
+    color: purple;
+}
