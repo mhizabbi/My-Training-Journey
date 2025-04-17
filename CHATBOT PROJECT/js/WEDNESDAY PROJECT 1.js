@@ -9,7 +9,7 @@ let toggleActive = document.querySelector('.searchonline');
         
         chatResponse.appendChild(robotChat());
 
-        // letScroll();
+        letScroll();
         // alert(EnableWebSearch())
         console.log(textresponse)
       await _bot_('', textresponse);
@@ -82,8 +82,8 @@ function EnableWebSearch(){
 //scroll chat
 function letScroll(){
     // chatResponse.addEventListener('scroll', function(){
-        console.log(this.clientHeight)
-        chatResponse.scrollTo = chatResponse.scrollHeight - 200;
+        // console.log(this.clientHeight)
+        chatResponse.scrollTop = chatResponse.scrollHeight - 200;
         // if(this.clientHeight > this.style.height){
         //     chatResponse.scrollTo(130)
         // }
@@ -192,7 +192,7 @@ async function _bot_ (rtn, txt){
     let time = setInterval(() => {
         // console.log(response.chatAt(start))
         lastP.innerHTML += response.charAt(start);
-        //scrollDown();
+        letScroll();
 
         if(start >= response.length){
             clearInterval(time);

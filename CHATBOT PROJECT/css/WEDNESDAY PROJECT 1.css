@@ -170,6 +170,8 @@
 .chat_init:disabled{
     background: silver;
     cursor: no-drop;
+    border-radius: 10px;
+    width: 50px;
 }
 
 ._searchonline_{
